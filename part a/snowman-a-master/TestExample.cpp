@@ -20,31 +20,10 @@ using namespace std;
 
 TEST_CASE("Good snowman code") {
     CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(12341234) == string("\t_===_\n\t(O.-)\n<\t/\n\t(> <)\n"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-
-
 }
 
 TEST_CASE("Bad snowman code") {
     CHECK_THROWS(snowman(555));
-    CHECK_THROWS(snowman(123443211));
-    CHECK_THROWS(snowman(555));
-    CHECK_THROWS(snowman(555));
-    CHECK_THROWS(snowman(555));
-    CHECK_THROWS(snowman(555));
-
 }
 
 /* Add more test cases here */
