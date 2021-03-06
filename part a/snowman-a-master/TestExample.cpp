@@ -11,12 +11,24 @@
 
 #include "doctest.h"
 #include "snowman.hpp"
-#include <stdexcept>
-#include <iostream>
 using namespace ariel;
 
 #include <string>
+#include <algorithm>
 using namespace std;
+
+/**
+ * Returns the input string without the whitespace characters: space, newline and tab.
+ * Requires std=c++2a.
+ */
+string nospaces(string input) {
+	std:: erase(input, ' ');
+	std::erase(input, '\t');
+	std::erase(input, '\n');
+	std::erase(input, '\r');
+	return input;
+}
+
 
 TEST_CASE("Good snowman code") {
     CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
