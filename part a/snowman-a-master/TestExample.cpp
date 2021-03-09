@@ -31,7 +31,7 @@ string nospaces(string input) {
 
 
 TEST_CASE("Good snowman code") {
-    CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+    CHECK(snowman(11114411) == string(" _===_\n (.,.)\n ( : )\n ( : )"));
 }
 
 TEST_CASE("Bad snowman code") {

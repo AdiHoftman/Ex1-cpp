@@ -11,8 +11,7 @@
 using namespace std;
 
 int main() {
-	cout << "hello";
-
+	
 	cout << ariel::snowman(11114411) << endl;   /* Should print:
 _===_
 (.,.)
